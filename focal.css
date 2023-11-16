@@ -1,0 +1,630 @@
+/* Start Rules */
+/* End Rules */
+
+/* Start Main Rules */
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #888;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+.clearFix {
+	clear: both;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+button {
+	cursor: pointer;
+}
+h1, h2, h3, strong, label,button,a {
+	text-transform: capitalize;
+}
+/* End Main Rules */
+
+
+
+/* Start header Rules */
+	
+.header {
+	color: #fff;
+	text-transform: capitalize;
+	font-family: sans-serif
+}
+
+.header .slider {
+	position: relative;
+	min-height: 75vh;
+	background-image: url('images/img.jpg');
+	background-size: cover;
+	background-color: rgba(0,0,0,.2);
+}
+
+.header .slider .info {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.header .slider h1 {
+	margin: 0;
+	padding: 5px 0;
+	color: silver;
+	border-top:4px solid silver;
+	border-bottom:4px solid silver;
+}
+
+.header .slider button {
+	margin-top: 30px;
+	border:1px solid #fff;
+	color:#fff;
+	background-color: transparent;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.header .navbar {
+	background-color: #252F31;
+	overflow: hidden;
+}
+
+.header .navbar h2 {
+	float: left;
+}
+
+.header .navbar h2>span {
+	color: #26D57A;
+}
+
+.header .navbar ul {
+	list-style-type: none;
+	padding-left: 0;
+	float: right;
+}
+
+.header .navbar ul>li {
+	font-size: 80%;
+	padding: 10px 0;
+	float: left;
+}
+
+.header .navbar ul>li:not(:last-of-type) {
+	margin-right: 20px;
+}
+
+.header .navbar ul>li a {
+	color: #fff;
+	transition:1s;
+}
+
+.header .navbar ul>li a.active {
+	color: #26D57A;
+}
+
+.header .navbar ul>li a:hover {
+	color: #26D57A;
+}
+
+/* End header Rules */
+
+/* Start features Rules */
+
+.features {
+	padding: 40px 0;
+	background-color:#fff;
+	overflow: hidden;
+}
+
+.features .feat {
+	float: left;
+	width: calc(33.333333% - 30px);
+}
+
+.features .feat:not(:last-of-type) {
+	margin-right: 45px;
+}
+.features .feat h2 {
+	text-transform: capitalize;
+	color: #666;
+	margin: 16px 0;
+}
+
+.features .feat p {
+	line-height: 1.5;
+	color: #888;
+	margin: 12px 0;
+}
+/* End features Rules */
+
+/* Start about-me Rules */
+
+/*.about-me {
+	
+	background-color: #F2F2F2;
+	overflow: hidden;
+}
+
+	.about-me .container {
+		position: relative;
+	}
+
+	.about-me .img ,
+	.about-me .info {
+		float: left;
+	}
+	.about-me .img {
+		width: 40%;
+	}
+
+	.about-me .info {
+		position: absolute;
+		width: 55%;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-left: 5%;
+	}
+		.about-me .info h2 {
+			margin-top: 0;
+		}
+		.about-me .info p {
+			line-height: 1.5;
+		}
+		.about-me .info .hobbies {
+			left: 50%;
+			top: 50%;
+			padding-top: 5%;
+		}
+			.about-me .info .hobbies > div {
+				float: left;
+				width: 49%;
+			}
+			.about-me .info .hobbies > div .icon {
+				float: left;
+				width: 10%;
+				font-size: 1em;
+				margin-right: 1%;
+			}
+			.about-me .info .hobbies > div .content {
+				float: left;
+				width: 89%;
+			}
+			 .about-me .info .hobbies > div .content h3 {
+			 	margin: 0;
+			 }
+			.about-me .info .hobbies > div:nth-of-type(odd) {
+				margin-right: 2%;
+			}
+*/
+
+.about-me {
+	position: relative;
+	background-color: #F2F2F2;
+	font-size: 1rem;
+}
+	.about-me i {
+		color: #2DCC70;
+	}
+	.about-me h2,.about-me h3 {
+		color: #333;
+	}
+	.about-me p {
+		color: #888;
+	}
+	.about-me .container {
+		width: 90%;
+		margin-left: 0;
+	}
+	
+	
+	.about-me .img ,
+	.about-me .info{
+		float: left;
+		
+	}
+
+	.about-me .img {
+		width: 40%;
+	}
+
+	.about-me .info {
+		position: absolute;
+		left: 40%;
+		top: 50%;
+		transform: translateY(-50%);
+		overflow: scroll;
+		max-height: 100%;
+		width: 50%;
+	}
+		.about-me .info .hobbies {
+			margin-top: 4em;
+		}
+			.about-me .info .hobbies > div {
+				float: left;
+				width: 49%;
+			}
+			.about-me .info .hobbies > div:nth-child(odd) {
+				margin-right:2%; 
+			}
+				.about-me .info .hobbies > div header {
+					overflow: hidden;
+				}
+					.about-me .info .hobbies > div i,
+					.about-me .info .hobbies > div h3 {
+						float: left;
+						margin: 0;
+					}
+
+					.about-me .info .hobbies > div i {
+						padding-right:.5em;
+					}
+
+	@media(max-width:870px) {
+		.about-me {
+			font-size: .7rem;
+		}
+	}
+/* End about-me Rules */
+
+/* Start skills Rules */
+
+.skills {
+	background-color: #FFFFFF;
+	padding: 5% 0;
+	overflow: hidden;
+}
+
+
+.skills .brief,
+.skills .progress {
+	float: left;
+	width: 47.5%;
+}
+
+.skills .brief {
+	margin-right: 5%;
+}
+
+.skills .brief h2 {
+	margin: 0;
+	color: #535C5B;
+}
+
+.skills .brief p {
+	color: #C7C7C7;
+}
+.skills .brief button {
+	background-color: transparent;
+	outline: none;
+	border:1px solid #2DCC70;
+	color: #2DCC70;
+	padding: 10px 20px;
+	margin-top:.5em; 
+}
+
+.skills .progress {
+	padding-top: 1.5em;
+}
+
+.skills .progress > div:not(:first-of-type) {
+	margin-top: 1em;
+}
+
+.skills .progress h3 {
+	margin: 0;
+	color: #687676;
+}
+
+.skills .progress > div span {
+	display: block;
+	background-color: #F3F3F3;
+	width: 100%;
+	margin-top: .5em
+}
+
+.skills .progress > div span::before {
+	display: block;
+	content: attr(data-text) '%';
+	text-align: right;
+	background-color: #2DCC70;
+	padding: 0 5px; 
+	color: #fff;
+}
+
+
+.skills .progress > div:nth-of-type(odd) span::before {
+	width: 90%;
+}
+
+.skills .progress > div:last-of-type span::before {
+	width: 70%;
+}
+
+.skills .progress > div:nth-of-type(2) span::before {
+	width: 80%;
+}
+
+/* End skills Rules */
+
+/* Start resume Rules */
+
+.resume {
+	position: relative;
+	background-color: #F2F2F2;
+	text-align: center;
+	padding: 5% 0;
+}
+
+.resume::before {
+	position: absolute;
+	content: "";
+	left: 50%;
+	top: 100%;
+	border:20px solid transparent;
+	border-top:20px solid #F2F2F2;
+	transform: translate(-50%);
+}
+
+.resume h2 {
+	margin-top: 0;
+	color: #525F60;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.resume p {
+	color: #BBBBBB;
+	padding: 0 5%;
+}
+
+.resume button {
+	background-color: transparent;
+	outline: none;
+	border:1px solid #2DCC70;
+	color: #2DCC70;
+	padding: 5px 10px;
+	margin-top: 1.25%;
+}
+
+/* End resume Rules */
+
+/* Start testimonials Rules */
+
+.testimonials {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	padding: 5% 0;
+}
+
+	.testimonials .clearFix + hr {
+		margin: 5% 0;
+	}
+
+	.testimonials .education .brief,
+	.testimonials .education .info {
+		float: left;
+		width: 47.5%;
+		
+	}
+
+	.testimonials .education p {
+		color: #C2C2C2;
+	}
+
+	.testimonials .education h3 {
+		color: #596164;
+	}
+
+	.testimonials .education .info {
+		margin-left: 5%;
+	}
+
+	.testimonials .education .brief h2 {
+		margin: 0;
+		color: #596164;
+	}
+
+	.testimonials .education .brief p {
+		line-height: 1.5em;
+	}
+
+	.testimonials .education .info > div:not(:first-of-type) {
+		margin-top: 3em;
+	}	
+
+	.testimonials .education .info > div h3 {
+		margin-bottom: 0;
+	}
+	.testimonials .education .info > div p {
+		margin:10px 0;
+	}
+
+		.testimonials .education .info > div span {
+			display: inline-block;
+			background-color: #2DCC70;
+			color: #fff;
+			padding: 5px;
+		}
+
+		.testimonials .education .info > div hr {
+			margin: 1em 0;
+		}
+
+		.testimonials .education .info > div p:last-of-type {
+			margin: 0;
+		}
+
+/* End testimonials Rules */
+
+/* Start wisdoms Rules */
+
+.wisdoms {
+	background-color: #F2F2F2;
+	text-align: center;
+	padding: 5% 2.5%;
+}
+
+	.wisdoms p {
+		margin-top: 0;
+	}
+
+	.wisdoms i {
+		color: #26D57A;
+		border-radius: 50%;
+	}
+		.wisdoms i.active {
+			background-color: #26D57A;
+		}
+
+/* End wisdoms Rules */
+
+/* Start portfolio Rules */
+
+.portfolio {
+	text-align: center;
+	padding: 5% 0;
+}
+	.portfolio h2 ,
+	.portfolio p {
+		padding: 0 5%;
+	}
+	.portfolio h2 {
+		margin: 0;
+	}
+
+	.portfolio p {
+		margin-bottom: 5%;
+	}
+
+	.portfolio .work {
+		overflow: hidden;
+	}
+
+.portfolio .work .row {
+	overflow: hidden;
+}
+
+.portfolio .work .row:not(:last-of-type) {
+	margin-bottom: 4.5%;
+}
+
+.portfolio .work .row .col {
+	float: left;
+	width: 30.333333%;
+}
+
+.portfolio .work .row>.col:not(:last-of-type) {
+	margin-right: 4.5%;
+}
+/* End portfolio Rules */
+
+/* Start contact-me Rules */
+
+.contact-me {
+	background-color: #252F31;
+	overflow: hidden;
+	padding: 5% 0;
+}
+	.contact-me .info ,
+	.contact-me .form {
+		float: left;
+	}
+	 .contact-me .info {
+		width: 50%;
+	 }
+	 .contact-me .form {
+	 	width: 45%;
+	 	margin-left: 5%;
+	 }
+	.contact-me .info h2 {
+		color: #fff;
+		margin: 0;
+	}
+
+	.contact-me .info p {
+		color: #545A5C;
+	}	
+
+	.contact-me .info strong {
+		color: #989DA0;
+	}
+
+	.contact-me .form {
+		padding-top: 1.5em;
+	}
+		.contact-me .form div {
+			margin-bottom: 1.5em;
+		}
+			.contact-me .form label {
+				display: block;
+				color: #989DA0;
+				margin-bottom: .2em;
+			}
+			.contact-me .form  div input,
+			 .contact-me .form  div textarea{
+				width: 100%;
+				background-color: #4C5557;
+				border:none;
+				outline: none;
+				color: #fff;
+			}
+			.contact-me .form  div textarea {
+				height: 100px;
+			}
+		.contact-me .form button {
+			color: #fff;
+			padding: 10px 20px;
+			background-color: #191E22;
+			border:none;
+		}
+		
+/* End contact-me Rules */
+
+/* Start footer Rules */
+
+.footer {
+	background-color: #191E22;
+	text-align: center;
+	color: #545A5C;
+	padding: 1.5% 0;
+}
+	.footer h6 {
+		margin:0; 
+	}
+	.footer .links {
+		margin-top: 1.5%;
+	}
+		.footer .links i{
+			color: #191E22;
+			background-color: #545A5C;
+			border-radius: 50%;
+			padding: 5px;
+		}
+
+/* End footer Rules */
+
+
+
+
+
+
+
